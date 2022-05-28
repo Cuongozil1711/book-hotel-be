@@ -41,7 +41,7 @@ public class UserServiceImpl implements UserService {
     JwtTokenProvider tokenProvider;
 
     public static final String ACCOUNT_SID = "AC2b4ddd238584a690c30b4bfc60d30b1b";
-    public static final String AUTH_TOKEN = "0ca81b767536572e2bdd13f9c2e9b7b1";
+    public static final String AUTH_TOKEN = "98ffcc69eea41ea752008f37003fed5f";
 
     @Override
     public User getUserInfoByName(String username) {
