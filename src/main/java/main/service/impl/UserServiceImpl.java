@@ -134,12 +134,12 @@ public class UserServiceImpl implements UserService {
             userCodeVerify.setUserCode(otp);
             userCodeVerify.setDateCode(new Date());
             userCodeVerify.setIdUser(user.getId());
-            Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
-            Message message = Message.creator(
-                            new com.twilio.type.PhoneNumber(phone),
-                            new com.twilio.type.PhoneNumber("+19403945818"),
-                            "your ZoJoy vertification code is: " + otp)
-                    .create();
+//            Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
+//            Message message = Message.creator(
+//                            new com.twilio.type.PhoneNumber(phone),
+//                            new com.twilio.type.PhoneNumber("+19403945818"),
+//                            "your ZoJoy vertification code is: " + otp)
+//                    .create();
             return  userCodeVerifyRepository.save(userCodeVerify);
         }
         catch (Exception ex){
